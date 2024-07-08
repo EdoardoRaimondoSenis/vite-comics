@@ -265,6 +265,7 @@
         color: white;
         padding: 15px;
         border: #0c7cec solid 1px;
+        cursor: pointer;
 
         &:hover {
             background-color: #0c7cec;

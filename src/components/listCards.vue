@@ -20,11 +20,15 @@ export default {
 .card {
     width: calc(100% / 6 - 2rem);
     height: 17rem;
-    margin: 0 1rem;
+    margin: 2rem 1rem;
 
     img {
         width: 10rem;
         height: 13rem;
+    }
+
+    h2 {
+        font-weight: lighter;
     }
 }
 

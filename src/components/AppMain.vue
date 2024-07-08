@@ -90,11 +90,14 @@ import ListCards from './listCards.vue';
 
 <template>
   <main>
-    <div class="imgMain"></div>
+    <div class="imgMain">
+      <div class="title">CURRENT SERIES</div>
+    </div>
     <div class="containerCards">
       <ListCards v-for="(element, el) in slider" :key="el"
         :details="element"
       />
+      <a href="" class="loadMore">LOAD MORE</a>
     </div>
     
   </main>
@@ -110,24 +113,44 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 0;
   color: white;
 
-    .imgMain {
-      background-image: url(../../public/jumbotron.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 25rem;
 
+  .imgMain {
+    background-image: url(../../public/jumbotron.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25rem;
+
+      .title {
+      position: absolute;
+      top: 23.5rem;
+      left: 15%;
+      padding: 5px 30px;
+      background-color: #0c7cec;
+      font-size: 30px;
     }
 
-    .containerCards {
-      display: flex;
-      flex-wrap: wrap;
-      background-color: black;
-      padding: 5rem 15% 5rem 15% ;
-    }
+
+  }
+
+  .containerCards {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    padding: 1rem 15% 3rem 15% ;
+  }
+
+  .loadMore {
+    margin: 4rem calc(50% - 98px) 0 calc(50% - 98px);
+    text-decoration: none;
+    color: white;
+    background-color: #0c7cec;
+    padding: 10px 55px;
+    border-radius: 5px;
+    font-size: 20px;
+  }
 
 
 }
