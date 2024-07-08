@@ -25,7 +25,7 @@ export default {
 <template>
   <header>
     <div class="header">
-      <img src="../public/dc-logo.png" alt="">
+      <img src="../../public/dc-logo.png" alt="">
       <ul>
         <li class="link" v-for="element in linkAdd"><a href="">{{ element.name }}</a></li>
       </ul>
@@ -44,6 +44,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   padding: 15px 0;
+  z-index: 10;
 
   img {
     width: 5rem;
