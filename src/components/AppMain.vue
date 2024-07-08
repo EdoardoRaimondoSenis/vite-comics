@@ -92,7 +92,9 @@ import ListCards from './listCards.vue';
   <main>
     <div class="imgMain"></div>
     <div class="containerCards">
-      <ListCards v-for="element in slider"/>
+      <ListCards v-for="(element, el) in slider" :key="el"
+        :details="element"
+      />
     </div>
     
   </main>
@@ -123,8 +125,8 @@ main {
     .containerCards {
       display: flex;
       flex-wrap: wrap;
-      padding-left: 15%;
-      padding-right: 15%;
+      background-color: black;
+      padding: 5rem 15% 5rem 15% ;
     }
 
 
