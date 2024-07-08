@@ -9,14 +9,15 @@
         components: {
             AppHeader,
             AppMain,
-            AppFooter
+            AppFooter,
+
         }
     }
 </script>
 
 <template>
     <AppHeader/>
-    <AppMain/>
+    <AppMain :listCards="slider"/>
     <AppFooter/>
 </template>
 

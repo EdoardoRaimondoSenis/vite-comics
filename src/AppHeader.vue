@@ -1,5 +1,4 @@
 <script>
-import { createApp } from 'vue';
 
 export default {
   
@@ -40,7 +39,7 @@ export default {
 @use '../src/styles/general.scss';
 
 .header {
-  margin: 6rem 15% auto;
+  margin: 0 15% auto;
   display: flex;
   align-items: center;
   justify-content: space-between;

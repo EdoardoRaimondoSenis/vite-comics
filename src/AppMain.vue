@@ -1,12 +1,20 @@
 <script>
+import ListCards from './components/listCards.vue';
+
     export default {
         name: 'AppMain',
+        components: {
+            ListCards
+        }
     }
+    
 </script>
 
 <template>
   <main>
-    <h2>--> CONTENT GOES HERE <--</h2>
+    <ul>    
+      
+    </ul>
   </main>
 </template>
 

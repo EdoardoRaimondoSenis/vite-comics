@@ -277,6 +277,7 @@
         padding: 0 1rem;
         font-size: 20px;
         font-weight: 500;
+        cursor: pointer;
     }
 
     ul {
